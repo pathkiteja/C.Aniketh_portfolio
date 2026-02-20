@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiExternalLink, FiCode, FiEye, FiFilter } from 'react-icons/fi';
-import { SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiJavascript, SiPython, SiTensorflow, SiMicrosoftexcel, SiSap } from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiMongodb, SiPython, SiTensorflow, SiMicrosoftexcel, SiSap } from 'react-icons/si';
 import Card from '../components/Card';
 import Button from '../components/Button';
 

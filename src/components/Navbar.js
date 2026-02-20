@@ -5,21 +5,21 @@ import { useTheme } from '../hooks/useTheme';
 import { useScrollDirection } from '../hooks/useScrollDirection';
 import Button from './Button';
 
+const navItems = [
+  { id: 'home', label: 'Home', icon: FiHome },
+  { id: 'about', label: 'About', icon: FiUser },
+  { id: 'skills', label: 'Skills', icon: FiCode },
+  { id: 'projects', label: 'Projects', icon: FiBriefcase },
+  { id: 'experience', label: 'Experience', icon: FiAward },
+  { id: 'contact', label: 'Contact', icon: FiMail },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [sidebarPosition, setSidebarPosition] = useState({ x: 0, y: 0 });
   const { theme, toggleTheme } = useTheme();
   const { scrollDirection, scrollY } = useScrollDirection();
-
-  const navItems = [
-    { id: 'home', label: 'Home', icon: FiHome },
-    { id: 'about', label: 'About', icon: FiUser },
-    { id: 'skills', label: 'Skills', icon: FiCode },
-    { id: 'projects', label: 'Projects', icon: FiBriefcase },
-    { id: 'experience', label: 'Experience', icon: FiAward },
-    { id: 'contact', label: 'Contact', icon: FiMail },
-  ];
 
   // Optimized scroll handler with throttling for better performance
   useEffect(() => {
