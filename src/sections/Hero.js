@@ -76,13 +76,13 @@ const Hero = () => {
   };
 
   const handleResumeClick = () => {
-    // Define all 4 resume files with actual names
+    // Define all resume files and cover letter with actual names
     const resumes = [
       { name: 'Resume_Aniketh_1.pdf', url: '/Resume Aniketh (1).pdf' },
       { name: 'Aniketh_Resume.pdf', url: '/Aniketh Resume.pdf' },
       { name: 'Resume_C_Aniketh.pdf', url: '/Resume C.Aniketh.pdf' },
       { name: 'Resume.pdf', url: '/resume.pdf' },
-      { name: 'C.Aniketh Cover_Letter.pdf', url: '/C.Aniketh Cover_Letter.pdf'}
+      { name: 'C.Aniketh_Cover_Letter.pdf', url: '/C.Aniketh Cover_Letter.pdf' }
     ];
 
     // Download each resume
