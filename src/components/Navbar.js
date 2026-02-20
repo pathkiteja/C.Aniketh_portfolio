@@ -48,7 +48,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [navItems]);
+  }, []);
 
   // Reset sidebar to center-right position
   const resetSidebarPosition = () => {
